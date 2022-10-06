@@ -1,7 +1,7 @@
-
+import friedPotato from '../images/egusi1.jpg'
 export const PRODUCTS = [
     {
-        productImg: "http://www.jevinik.com/images/menu/egusi1.jpg",
+        productImg: friedPotato,
         productName: "Fried Potato",
         productPrice: "2500",
         productDescription: "Porridge Beans With Assorted Protein & Fried Plantain. Kidney shaped brown beans boiled and garnished with pepper, palmoil, onion seasoning cubes and salt",
