@@ -16,8 +16,10 @@ const Product = () => {
     };
 
     const decreementCount = () => {
-
-        setcount(count - 1);
+        if (count === 0) {
+            setcount(count)
+        } else
+            setcount(count - 1);
 
     };
 
@@ -58,14 +60,14 @@ const Product = () => {
                                         text={"-"}
                                         bgColor={"white"}
                                         textColor={"green"}
-                                        clikFunc={decreementCount}
+                                        clikFunc={product.cliFunk(decreementCount)}
                                     />
                                     <ProductCounter>{count}</ProductCounter>
                                     <Button
                                         text={"+"}
                                         bgColor={"white"}
                                         textColor={"green"}
-                                        clikFunc={increementCount}
+                                        clikFunc={product.cliFunk(increementCount)}
                                     />
                                 </ProductOrder>
 
