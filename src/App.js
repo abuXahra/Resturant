@@ -30,9 +30,9 @@ function App() {
         <Navbar />
         <Routes>
           <Route exact path='/' element={<HomePage />}></Route>
+          <Route exact path='/products' element={<Product />}></Route>
           <Route exact path='/example' element={<ExamplePage />}></Route>
           <Route exact path='/contact' element={<ContactPage />}></Route>
-          <Route exact path='/products' element={<Product />}></Route>
           <Route exact path='/about' element={<About />}></Route>
         </Routes>
         <Footer />

@@ -34,7 +34,7 @@ export const ProductsItems = styled.div`
 `
 export const ProductContainer = styled.div`
     display: flex;
-    margin: 20px 0;
+    margin: 20px 0px;
     width: auto;
 
    

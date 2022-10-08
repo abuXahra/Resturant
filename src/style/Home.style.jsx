@@ -223,7 +223,6 @@ export const ContactHeader = styled.div`
 `
 
 export const ContactForm = styled.div`
-      
         width: 50%;
         height: 100%;             
 
@@ -250,6 +249,6 @@ export const ContactForm = styled.div`
         width: 100%;
         flex-direction: column;
         margin-top: 20px;
-  
+
     }
     `

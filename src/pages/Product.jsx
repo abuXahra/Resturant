@@ -56,18 +56,19 @@ const Product = () => {
                                 {/* View Product Link */}
 
                                 <ProductOrder>
+
                                     <Button
                                         text={"-"}
                                         bgColor={"white"}
                                         textColor={"green"}
-                                        clikFunc={product.cliFunk(decreementCount)}
+                                        clikFunc={""}
                                     />
                                     <ProductCounter>{count}</ProductCounter>
                                     <Button
                                         text={"+"}
                                         bgColor={"white"}
                                         textColor={"green"}
-                                        clikFunc={product.cliFunk(increementCount)}
+                                        clikFunc={""}
                                     />
                                 </ProductOrder>
 

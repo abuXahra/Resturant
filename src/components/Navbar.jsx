@@ -36,9 +36,10 @@ const Navbar = () => {
             </Hamburger>
             <Menu isOpen={isOpen}>
                 <MenuLink to='/' onClick={isOpen}>Home</MenuLink>
+                <MenuLink to='/products' onClick={isOpen}>Products</MenuLink>
                 <MenuLink to='/about' onClick={isOpen}>About</MenuLink>
                 <MenuLink to='/contact' onClick={isOpen}>Contact</MenuLink>
-                <MenuLink to='/products' onClick={isOpen}>Products</MenuLink>
+
             </Menu>
 
         </Nav>

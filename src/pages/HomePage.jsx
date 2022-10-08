@@ -3,10 +3,12 @@ import Button from '../components/Button';
 import { PRODUCTS } from '../data/product';
 import {
     HeaderSection, Heading, StyleHomePage, Overlay, OverlayContent, WorkingHourSection, WHHeader, WHBody, ProductSection, ProductHeader,
-    ProductsItems, ProductContainer, PriceContainer, ProductDetailWrapper, ProductDescription, ProductCategory, ContactSection, ContactHeader, ContactForm
+    ProductsItems, ProductContainer, PriceContainer, ProductDetailWrapper, ProductDescription, ProductCategory, ContactSection, ContactHeader,
 } from '../style/Home.style';
 
 import AnchorLink from '../components/AnchorLink';
+import { ContactForm } from '../style/Form.style';
+import ContactPage from './ContactPage';
 
 
 
@@ -14,7 +16,42 @@ import AnchorLink from '../components/AnchorLink';
 
 const HomePage = () => {
 
+    // Display 4 product Item on the home page
+    const PRODS = [{
+        productImg: PRODUCTS[0].productImg,
+        productName: PRODUCTS[0].productName,
+        productPrice: PRODUCTS[0].productPrice,
+        productDescription: PRODUCTS[0].productDescription,
+        productCategory: PRODUCTS[0].productCategory,
+        cliFunk: PRODUCTS[0].cliFunk,
+    },
+    {
+        productImg: PRODUCTS[1].productImg,
+        productName: PRODUCTS[1].productName,
+        productPrice: PRODUCTS[1].productPrice,
+        productDescription: PRODUCTS[1].productDescription,
+        productCategory: PRODUCTS[1].productCategory,
+        cliFunk: PRODUCTS[1].cliFunk,
+    },
+    {
+        productImg: PRODUCTS[2].productImg,
+        productName: PRODUCTS[2].productName,
+        productPrice: PRODUCTS[2].productPrice,
+        productDescription: PRODUCTS[2].productDescription,
+        productCategory: PRODUCTS[2].productCategory,
+        cliFunk: PRODUCTS[2].cliFunk,
+    },
+        ,
+    {
+        productImg: PRODUCTS[3].productImg,
+        productName: PRODUCTS[3].productName,
+        productPrice: PRODUCTS[3].productPrice,
+        productDescription: PRODUCTS[3].productDescription,
+        productCategory: PRODUCTS[3].productCategory,
+        cliFunk: PRODUCTS[3].cliFunk,
+    }
 
+    ]
 
     return (
         <StyleHomePage>
@@ -57,7 +94,8 @@ const HomePage = () => {
                 {/* Products */}
                 <ProductsItems>
                     {
-                        PRODUCTS.map((product, index) => (
+
+                        PRODS.map((product, index) => (
                             <ProductContainer key={index}>
                                 {/*Product Image  */}
                                 <img src={product.productImg} alt="" srcset="" />
@@ -95,33 +133,7 @@ const HomePage = () => {
             </ProductSection>
 
             {/* Contact Section */}
-            <ContactSection>
-                <ContactHeader>
-                    <h2>Talk to Us</h2>
-                    <h3>Address</h3>
-                    <p>Plot 107 Jeguin Estate, Cadastral Zone B6, Mabushi, Federal Captial Territory, Abuja </p>
-                    <h3>Email</h3>
-                    <p>info@elirtnt.com</p>
-                    <p>contact@elirtnt.com</p>
-                    <h3>Phone Number</h3>
-                    <p>+23490000000</p>
-                    <p>+23481000000</p>
-                </ContactHeader>
-                <ContactForm>
-                    <form action="">
-                        <div><input type="text" placeholder="name" /></div>
-                        <div><input type="number" placeholder="name" /></div>
-                        <div><input type="email" placeholder="name" /></div>
-                        <div><textarea name="message" id="" cols="30" rows="10">message</textarea></div>
-                        <Button
-                            text={"Send"}
-                            textColor={"white"}
-                            bgColor={"green"}
-                            clikFunc={() => { }}
-                        />
-                    </form>
-                </ContactForm>
-            </ContactSection>
+            <ContactPage />
         </StyleHomePage>
     );
 }
