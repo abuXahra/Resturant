@@ -3,6 +3,7 @@ import React, { useState } from 'react';
 import { Hamburger, Logo, Menu, MenuLink, Nav } from '../style/Navbar';
 import { FaBars } from 'react-icons/fa';
 import { GrClose } from 'react-icons/gr';
+import AnchorLink from './AnchorLink';
 
 
 const Navbar = () => {
@@ -23,7 +24,6 @@ const Navbar = () => {
 
     return (
         <Nav>
-
             <Logo href="/">
                 Eli <span>Rsnt</span>
             </Logo>
@@ -39,6 +39,13 @@ const Navbar = () => {
                 <MenuLink to='/products' onClick={isOpen}>Products</MenuLink>
                 <MenuLink to='/about' onClick={isOpen}>About</MenuLink>
                 <MenuLink to='/contact' onClick={isOpen}>Contact</MenuLink>
+
+                <AnchorLink
+                    url={"https://play.google.com/store/apps/details?id=com.islam.skill"}
+                    text={"Login"}
+                    bgColor={"orange"}
+                    txtColor={"black"}
+                    onClick={isOpen} />
 
             </Menu>
 

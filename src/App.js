@@ -44,15 +44,3 @@ function App() {
 
 export default App;
 
-
-{/* <div className='App'>
-
-          <ul>
-            <Link to={'/'}>Home</Link> <br />
-            <Link to={'/about'}>About Us</Link><br />
-            <Link to={'/service'}>Service</Link><br />
-            <Link to={'/contact'}>Contact Us</Link><br />
-            <Link to={'/classcomponents'}>Class Base components</Link>
-          </ul>
-
-        </div> */}

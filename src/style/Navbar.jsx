@@ -2,7 +2,7 @@ import styled from 'styled-components';
 import { Link } from 'react-router-dom'
 
 export const Nav = styled.div`
-padding: 0 2rem;
+padding: 0;
 display: flex;
 justify-content: space-between;
 align-items: center;
@@ -16,6 +16,7 @@ export const Hamburger = styled.div`
     flex-direction: column;
     cursor: pointer;
     display: none;
+
    
 
     span{
@@ -23,6 +24,7 @@ export const Hamburger = styled.div`
         width: 25px;
        color: white;
         margin-bottom:4px;
+        margin-right: 10px;
     }
 
     @media (max-width: 768px) {
@@ -51,8 +53,7 @@ export const Menu = styled.div`
 display: flex;
 align-items: center;
 position: relative;
-
-
+padding-right : 20px;
 
 @media (max-width: 768px) {
  overflow: hidden;
@@ -61,7 +62,9 @@ position: relative;
  max-height: ${({ isOpen }) => isOpen ? "auto" : "0"};
  transition: max-height 0.3s ease-in;
  background-color: green;
- 
+ padding-bottom: ${({ isOpen }) => isOpen ? "20px" : "0"}; 
+ padding-top: ${({ isOpen }) => isOpen ? "20px" : "0"}; 
+ padding-right : 0px;
 }
 `
 
@@ -71,6 +74,7 @@ color: white;
 text-decoration: none;
 font-weight: 800;
 font-size: 1.7rem;
+margin-left: 20px;
 
 span{
     font-weight: 300;

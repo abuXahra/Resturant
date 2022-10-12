@@ -31,14 +31,20 @@ export const ProductsItems = styled.div`
     display: flex;
     flex-wrap: wrap;
     justify-content:space-evenly;
+
+    @media (max-width: 768px) {
+    
+        flex-direction: column;
+        padding-left: 20px;
+        height: 100%;
+    
+    }
 `
 export const ProductContainer = styled.div`
     display: flex;
     margin: 20px 0px;
     width: auto;
-
-   
-height: 270px;
+    height: 270px;
    
    
     img{
@@ -50,6 +56,11 @@ height: 270px;
 @media (max-width: 768px){
     width: 45%;
     margin: 10px;
+    height: 270px;
+    img{
+        border-radius: 20px 0px 0px 20px;
+        height:150px;
+    }
 }
 
 `
@@ -78,8 +89,14 @@ export const ProductDetailWrapper = styled.div`
     flex-direction: column;
     width: 200px;
     background-color: rgb(40, 44, 52);
-    border-radius: 0px 20px 20px 0px;
+
+    border-radius:0px 20px 20px 0px;
     padding: 10px;
+
+    @media (max-width: 768px) {
+        border-radius:0px 20px 20px 20px; 
+    }
+ 
 `
 
 export const ProductDescription = styled.div`
