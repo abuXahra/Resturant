@@ -60,7 +60,7 @@ const HomePage = () => {
                 <Overlay>
                     <OverlayContent>
                         <Heading>Eli Resturant</Heading>
-                        <p>We Offer The Best Meals at the Best Value</p>
+                        <p>We Offer The Best Meals at the Best Prices</p>
                         <Button
                             textColor={"green"}
                             bgColor={"white"}
@@ -73,7 +73,7 @@ const HomePage = () => {
             {/* Working Hour section */}
             <WorkingHourSection>
                 <WHHeader>
-                    <h2>Our Working <br />  Hours</h2>
+                    <h2>Our Working Hours</h2>
                 </WHHeader>
                 <WHBody>
                     <p>Mon: 8am - 11pm</p>

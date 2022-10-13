@@ -7,12 +7,15 @@ padding:50px;
 background-color: #000000ec;
 color: white;
 
+@media (max-width: 768px) {
+    padding:20px;
+}
 
 `
 
 export const FooterContent = styled.div`
     display: flex;
-
+    
     div{
        width: 33%;
        padding: 0 20px;

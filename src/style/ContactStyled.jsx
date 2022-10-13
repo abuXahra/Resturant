@@ -14,7 +14,14 @@ export const ContactSection = styled.section`
         width: 100%;
 
         flex-direction: column;
-        padding: 50px 10px;
+        padding: 20px;
+        font-size: 12px;
+        p{
+            font-size: 12px;
+        }
+        h2{
+            
+        }
     }
 `
 
