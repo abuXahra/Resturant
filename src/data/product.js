@@ -63,8 +63,7 @@ export const PRODUCTS = [
         productImg: fisherman,
         productName: "fisherman",
         productPrice: "2500",
-        productDescription: "Porridge Beans With Assorted Protein & Fried Plantain. Kidney shaped brown beans boiled and garnished with pepper, palmoil, onion seasoning cubes and salt",
-        productCategory: "Fish",
+        productDescription: "Porridge Beans With Assorted Protein & Fried Plantain. Kidney shaped",
         cliFunk: buttonFunc,
     },
     {
